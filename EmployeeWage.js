@@ -1,4 +1,4 @@
-    const PART_TIME_PRESENT = 2;
+    const   PART_TIME_PRESENT = 2;
     const   PART_TIME_WORK_HR = 4;
     const   FULL_TIME_PRESENT = 1;
     const   FULL_TIME_WORK_HR = 8;
@@ -9,17 +9,16 @@
     usingSwitchCase();
     getWagePerMonth();
     maxHrsReached();
+
     function getAttendance() {
-		
     let checkStatus =  Math.floor(Math.random() * 10) %  2;
     if(checkStatus == 0)
         console.log("emp is absent");
     else
-    console.log("emp is present");
+        console.log("emp is present");
     }
 
     function getPartTime() {
-            
         let workHr = 0;
         let dailyWage = 0;
         let emp = Math.floor(Math.random() * 10) %  3;
@@ -42,12 +41,7 @@
         
     }
 
-
-
-
-
     function maxHrsReached() {
-			
         let empHr = 0;
         let total = 0;
         let days = 0;
@@ -72,7 +66,7 @@
                 console.log("contition doesnot exit");
         }
         
-            let dailyWage = (SALARY_PER_HR * empHr);
+        let dailyWage = (SALARY_PER_HR * empHr);
         total = (total + dailyWage);
         days = (days+1);
         workHr = (workHr + empHr);
@@ -84,12 +78,10 @@
         console.log("total working hours will be: " + workHr);
     }
 
-
-
-    function usingSwitchCase() {
-                
+    function usingSwitchCase() {    
         let workHr = 0;
         let emp =  Math.floor(Math.random() * 10) %  3;
+
         switch(emp) { 
             case 1:
                 console.log("Employee is present");
@@ -111,7 +103,6 @@
         console.log("salary will be" + dailyWage);
     }
 
-
     function getWagePerMonth() {
 			
         let empHr = 0;
@@ -120,8 +111,8 @@
         let workHr = 0;
         
         while( days<20 ) {
-            
         let emp =  Math.floor(Math.random() * 10) %  3;
+        
         switch(emp) { 
             case 1:
                 console.log("Employee is present");
